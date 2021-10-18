@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22334640-EA03-4337-AF18-C1262E106480}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thayer.Birding</RootNamespace>
+    <AssemblyName>Thayer.Birding</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="BackupRestore.cs" />
+    <Compile Include="Data\EBirdReferenceDM.cs" />
+    <Compile Include="EBirdReference.cs" />
+    <Compile Include="ImagePreferenceType.cs" />
+    <Compile Include="Filtering\FilterSettings.cs" />
+    <Compile Include="Filtering\UserFilterSettings.cs" />
+    <Compile Include="IDatabaseUpdater.cs" />
+    <Compile Include="WorldRangeMap.cs" />
+    <Compile Include="AnimatedRangeMap.cs" />
+    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="Archiving\Archive.cs" />
+    <Compile Include="Archiving\Archiver.cs" />
+    <Compile Include="Configuration\EncryptedSettings.cs" />
+    <Compile Include="Configuration\EncryptedSettingsSectionHandler.cs" />
+    <Compile Include="CustomDatabase.cs" />
+    <Compile Include="Data\WorldRangeMapDM.cs" />
+    <Compile Include="OperatingSystem.cs" />
+    <Compile Include="PhotoListItem.cs" />
+    <Compile Include="CustomMedia.cs" />
+    <Compile Include="CustomQuiz.cs" />
+    <Compile Include="CustomQuizCategory.cs" />
+    <Compile Include="CustomThing.cs" />
+    <Compile Include="DataSourceType.cs" />
+    <Compile Include="Data\AnimatedRangeMapDM.cs" />
+    <Compile Include="Data\CommonNameDM.cs" />
+    <Compile Include="Data\ThingCustomMediaDM.cs" />
+    <Compile Include="Data\CustomMediaDM.cs" />
+    <Compile Include="Data\CustomQuizCategoryDM.cs" />
+    <Compile Include="Data\CustomQuizCategoryThingDM.cs" />
+    <Compile Include="Data\CustomQuizDM.cs" />
+    <Compile Include="Data\CustomQuizThingDM.cs" />
+    <Compile Include="Data\CustomThingDM.cs" />
+    <Compile Include="Data\CustomThingMediaDM.cs" />
+    <Compile Include="Data\FamilyDM.cs" />
+    <Compile Include="Data\HallOfFameDM.cs" />
+    <Compile Include="Data\MdfDM.cs" />
+    <Compile Include="Data\MediaDirectoryDM.cs" />
+    <Compile Include="Data\SightingsReportDM.cs" />
+    <Compile Include="Filtering\CustomListFilter.cs" />
+    <Compile Include="Filtering\FamilyFilter.cs" />
+    <Compile Include="Filtering\FilterCollection.cs" />
+    <Compile Include="Filtering\Filters.cs" />
+    <Compile Include="Filtering\IFilter.cs" />
+    <Compile Include="Filtering\LifeListReportFilter.cs" />
+    <Compile Include="Filtering\RegionFilter.cs" />
+    <Compile Include="Filtering\SightingsReportFilter.cs" />
+    <Compile Include="Filtering\StateFilter.cs" />
+    <Compile Include="FormSettings.cs" />
+    <Compile Include="HallOfFame.cs" />
+    <Compile Include="HallOfFameCriteria.cs" />
+    <Compile Include="IMediaList.cs" />
+    <Compile Include="IMedia.cs" />
+    <Compile Include="IQuizThing.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LanguageChangedEventArgs.cs" />
+    <Compile Include="Licensing\IProductSelector.cs" />
+    <Compile Include="Licensing\LicenseChangedEventArgs.cs" />
+    <Compile Include="Licensing\Product.cs" />
+    <Compile Include="Licensing\ThayerLicense.cs" />
+    <Compile Include="Licensing\ThayerLicenseCollection.cs" />
+    <Compile Include="Licensing\ThayerLicenseException.cs" />
+    <Compile Include="Licensing\ThayerLicenseFile.cs" />
+    <Compile Include="Licensing\ThayerLicenseManager.cs" />
+    <Compile Include="LifeListReportItem.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="MediaDirectory.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="PhotoContentType.cs" />
+    <Compile Include="ProgressUpdateEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BandCode.cs" />
+    <Compile Include="Characteristic.cs" />
+    <Compile Include="CharacteristicCollection.cs" />
+    <Compile Include="CharacteristicDictionary.cs" />
+    <Compile Include="CharacteristicType.cs" />
+    <Compile Include="Class.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Configuration\LicenseConfigurationSectionHandler.cs" />
+    <Compile Include="CustomList.cs" />
+    <Compile Include="CustomListItem.cs" />
+    <Compile Include="CustomListItemCollection.cs" />
+    <Compile Include="Data\BandCodesDM.cs" />
+    <Compile Include="Data\CharacteristicsDM.cs" />
+    <Compile Include="Data\CollectionDM.cs" />
+    <Compile Include="Data\CustomListsThingsDM.cs" />
+    <Compile Include="Data\CustomListDM.cs" />
+    <Compile Include="Data\GenusDM.cs" />
+    <Compile Include="Data\KingdomDM.cs" />
+    <Compile Include="Data\LanguageRegionListDM.cs" />
+    <Compile Include="Data\LocationDM.cs" />
+    <Compile Include="Data\MediaDM.cs" />
+    <Compile Include="Data\NotesDM.cs" />
+    <Compile Include="Data\ObserverDM.cs" />
+    <Compile Include="Data\PeteySpeechDM.cs" />
+    <Compile Include="Data\QuizDM.cs" />
+    <Compile Include="Data\QuizEntryDM.cs" />
+    <Compile Include="Data\SightingsDM.cs" />
+    <Compile Include="Data\SimilarThingsDM.cs" />
+    <Compile Include="Data\ThingsDescriptionsDM.cs" />
+    <Compile Include="FieldMark.cs" />
+    <Compile Include="Habitat.cs" />
+    <Compile Include="IDString.cs" />
+    <Compile Include="ITaxonomy.cs" />
+    <Compile Include="PeteySpeech.cs" />
+    <Compile Include="Kingdom.cs" />
+    <Compile Include="LanguageString.cs" />
+    <Compile Include="Licensing\License.cs" />
+    <Compile Include="Licensing\LicenseCollection.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Media.cs" />
+    <Compile Include="MediaCollection.cs" />
+    <Compile Include="MediaList.cs" />
+    <Compile Include="MediaType.cs" />
+    <Compile Include="Observer.cs" />
+    <Compile Include="Organism.cs" />
+    <Compile Include="CommonName.cs" />
+    <Compile Include="Data\ThingsDM.cs" />
+    <Compile Include="Data\TaxonomyDM.cs" />
+    <Compile Include="Family.cs" />
+    <Compile Include="Genus.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrganismDisplayOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrganismListItem.cs" />
+    <Compile Include="OrganismSortOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Phylum.cs" />
+    <Compile Include="Quiz.cs" />
+    <Compile Include="QuizAnswer.cs" />
+    <Compile Include="QuizEntry.cs" />
+    <Compile Include="QuizSettings.cs" />
+    <Compile Include="QuizSource.cs" />
+    <Compile Include="Reference.cs" />
+    <Compile Include="Sighting.cs" />
+    <Compile Include="SightingsReportItem.cs" />
+    <Compile Include="SimilarSpecies.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="Species.cs" />
+    <Compile Include="Taxonomy.cs" />
+    <Compile Include="TaxonomyCollection.cs" />
+    <Compile Include="ThayerEncryptedData.cs" />
+    <Compile Include="UserSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.7.2.20, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rd Party\DotNetZip\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)eViewerPostBuild.bat "$(WindowsSDK80Path)" "$(SolutionDir)" "$(ProjectDir)" "$(ProjectName)" "$(OutDir)" "$(TargetFileName)" 2</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Birding.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>

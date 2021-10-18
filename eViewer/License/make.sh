@@ -1,0 +1,1 @@
+gcc -arch i386 -arch ppc -dynamiclib License.cpp -exported_symbols_list export_list -o libLicense.so

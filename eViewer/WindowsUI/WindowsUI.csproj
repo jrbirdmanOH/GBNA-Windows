@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F86DF64A-B6D0-4A96-A419-0C09FA371D3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thayer.Birding.UI.Windows</RootNamespace>
+    <AssemblyName>eViewer</AssemblyName>
+    <ApplicationIcon>eViewer.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=11.5.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINNT\assembly\GAC\CrystalDecisions.Enterprise.Framework\11.5.3300.0__692fbea5521e1304\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=11.5.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINNT\assembly\GAC\CrystalDecisions.Enterprise.InfoStore\11.5.3300.0__692fbea5521e1304\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Mono.Data.SqliteClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rd Party\SQLite\Mono.Data.SqliteClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Infragistics2.Shared.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Shared.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Win.Misc.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Win.UltraWinEditors.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Win.UltraWinGrid.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Win.UltraWinPrintPreviewDialog.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Win.UltraWinTabbedMdi.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2007 Volume 1 CLR 2.0\windows forms\bin\Infragistics2.Win.v7.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WinHTMLEditorControl, Version=3.2.8.8, Culture=neutral, PublicKeyToken=8cd2bb127043f8aa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\.NET Win HTML Editor Control\winHTMLEditorControl\Core Control DLL\WinHTMLEditorControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentsForm.Designer.cs">
+      <DependentUpon>CommentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCompareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomCompareForm.Designer.cs">
+      <DependentUpon>CustomCompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoListForm.Designer.cs">
+      <DependentUpon>PhotoListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizCopyToCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizCopyToCategoryForm.Designer.cs">
+      <DependentUpon>MyQuizCopyToCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SightingsGroupLocationReport.cs">
+      <DependentUpon>SightingsGroupLocationReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MyMediaSoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMediaSoundForm.Designer.cs">
+      <DependentUpon>MyMediaSoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMediaVideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMediaVideoForm.Designer.cs">
+      <DependentUpon>MyMediaVideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportPreviousVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportPreviousVersionForm.Designer.cs">
+      <DependentUpon>ImportPreviousVersionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licensing\LicenseKeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licensing\LicenseKeyForm.Designer.cs">
+      <DependentUpon>LicenseKeyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licensing\LicenseKeyManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licensing\LicenseKeyManagerForm.Designer.cs">
+      <DependentUpon>LicenseKeyManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompareForm.Designer.cs">
+      <DependentUpon>CompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorDetailsForm.Designer.cs">
+      <DependentUpon>ErrorDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licensing\ProductSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licensing\ProductSelectionForm.Designer.cs">
+      <DependentUpon>ProductSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licensing\ProductSelector.cs" />
+    <Compile Include="MyMediaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMediaForm.Designer.cs">
+      <DependentUpon>MyMediaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMediaPhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMediaPhotoForm.Designer.cs">
+      <DependentUpon>MyMediaPhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObserversForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObserversForm.Designer.cs">
+      <DependentUpon>ObserversForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizEditCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizEditCategoryForm.Designer.cs">
+      <DependentUpon>MyQuizEditCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizEditQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizEditQuizForm.Designer.cs">
+      <DependentUpon>MyQuizEditQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizEditCategoryItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizEditCategoryItemForm.Designer.cs">
+      <DependentUpon>MyQuizEditCategoryItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizNewCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizNewCategoryForm.Designer.cs">
+      <DependentUpon>MyQuizNewCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizNewQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizNewQuizForm.Designer.cs">
+      <DependentUpon>MyQuizNewQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizQuickStartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizQuickStartForm.Designer.cs">
+      <DependentUpon>MyQuizQuickStartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\MyQuizzesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\MyQuizzesForm.Designer.cs">
+      <DependentUpon>MyQuizzesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SightingsReport.cs">
+      <DependentUpon>SightingsReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SightingsGroupFamilyReport.cs">
+      <DependentUpon>SightingsGroupFamilyReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CustomListEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomListEditForm.Designer.cs">
+      <DependentUpon>CustomListEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomListForm.Designer.cs">
+      <DependentUpon>CustomListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdentificationForm.Designer.cs">
+      <DependentUpon>IdentificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LifeListReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LifeListReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LifeListReportItemData.cs">
+    </Compile>
+    <Compile Include="LocationTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocationTreeView.Designer.cs">
+      <DependentUpon>LocationTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapForm.Designer.cs">
+      <DependentUpon>MapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MediaPlayer.Designer.cs">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NarrativeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NarrativeForm.Designer.cs">
+      <DependentUpon>NarrativeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EGuideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EGuideForm.Designer.cs">
+      <DependentUpon>EGuideForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObserverEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObserverEditForm.Designer.cs">
+      <DependentUpon>ObserverEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenForm.Designer.cs">
+      <DependentUpon>OpenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganismComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PeteySandboxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeteySandboxForm.Designer.cs">
+      <DependentUpon>PeteySandboxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoForm.Designer.cs">
+      <DependentUpon>PhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoGalleryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoGalleryForm.Designer.cs">
+      <DependentUpon>PhotoGalleryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PortableDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PortableDeviceForm.Designer.cs">
+      <DependentUpon>PortableDeviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CommentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCompareForm.resx">
+      <DependentUpon>CustomCompareForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoListForm.resx">
+      <DependentUpon>PhotoListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizCopyToCategoryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizCopyToCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SightingsGroupLocationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SightingsGroupLocationReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMediaSoundForm.resx">
+      <DependentUpon>MyMediaSoundForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMediaVideoForm.resx">
+      <DependentUpon>MyMediaVideoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportPreviousVersionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportPreviousVersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licensing\LicenseKeyForm.resx">
+      <DependentUpon>LicenseKeyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licensing\LicenseKeyManagerForm.resx">
+      <DependentUpon>LicenseKeyManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompareForm.resx">
+      <DependentUpon>CompareForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorDetailsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licensing\ProductSelectionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMediaForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyMediaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMediaPhotoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyMediaPhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObserversForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ObserversForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Quiz\MyQuizEditCategoryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizEditCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizEditQuizForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizEditQuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizEditCategoryItemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizEditCategoryItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizNewCategoryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizNewCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizNewQuizForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizNewQuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizQuickStartForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizQuickStartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\MyQuizzesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyQuizzesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SightingsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SightingsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SightingsGroupFamilyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SightingsGroupFamilyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomListEditForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomListEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentificationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IdentificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LifeListReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LifeListReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationTreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocationTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapForm.resx">
+      <DependentUpon>MapForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaPlayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NarrativeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NarrativeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EGuideForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EGuideForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObserverEditForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ObserverEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeteySandboxForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PeteySandboxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoGalleryForm.resx">
+      <DependentUpon>PhotoGalleryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortableDeviceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PortableDeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\GenerateQuizProgressForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GenerateQuizProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\HallOfFameClearScoresForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HallOfFameClearScoresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\HallOfFameForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HallOfFameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\HallOfFameNameForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HallOfFameNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\PickOneMediaPlayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PickOneMediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizFillInTheBlankForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuizFillInTheBlankForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizFillInTheBlankPanel.resx">
+      <DependentUpon>QuizFillInTheBlankPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizFlashCardForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuizFlashCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizFlashCardPanel.resx">
+      <DependentUpon>QuizFlashCardPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizMultipleChoiceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuizMultipleChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizMultipleChoicePanel.resx">
+      <DependentUpon>QuizMultipleChoicePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizCommonOptionsPanel.resx">
+      <DependentUpon>QuizCommonOptionsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizPickOneForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuizPickOneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizPickOnePanel.resx">
+      <DependentUpon>QuizPickOnePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizSelectPanel.resx">
+      <DependentUpon>QuizSelectPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizTypePanel.resx">
+      <DependentUpon>QuizTypePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz\QuizWizardForm.resx">
+      <DependentUpon>QuizWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenSaverForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScreenSaverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SightingsEditForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SightingsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SightingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SightingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SightingsReportsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SightingsReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundForm.resx">
+      <DependentUpon>SoundForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxonomyTreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TaxonomyTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Quiz\GenerateQuizProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\GenerateQuizProgressForm.Designer.cs">
+      <DependentUpon>GenerateQuizProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\HallOfFameClearScoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\HallOfFameClearScoresForm.Designer.cs">
+      <DependentUpon>HallOfFameClearScoresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\HallOfFameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\HallOfFameForm.Designer.cs">
+      <DependentUpon>HallOfFameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\HallOfFameManager.cs" />
+    <Compile Include="Quiz\HallOfFameNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\HallOfFameNameForm.Designer.cs">
+      <DependentUpon>HallOfFameNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\PickOneMediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\PickOneMediaPlayer.Designer.cs">
+      <DependentUpon>PickOneMediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizFillInTheBlankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizFillInTheBlankForm.Designer.cs">
+      <DependentUpon>QuizFillInTheBlankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizFillInTheBlankPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizFillInTheBlankPanel.Designer.cs">
+      <DependentUpon>QuizFillInTheBlankPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizFlashCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizFlashCardForm.Designer.cs">
+      <DependentUpon>QuizFlashCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizFlashCardPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizFlashCardPanel.Designer.cs">
+      <DependentUpon>QuizFlashCardPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizLauncher.cs" />
+    <Compile Include="Quiz\QuizMediaPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizMultipleChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizMultipleChoiceForm.Designer.cs">
+      <DependentUpon>QuizMultipleChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizMultipleChoicePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizMultipleChoicePanel.Designer.cs">
+      <DependentUpon>QuizMultipleChoicePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizCommonOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizCommonOptionsPanel.Designer.cs">
+      <DependentUpon>QuizCommonOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizPickOneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizPickOneForm.Designer.cs">
+      <DependentUpon>QuizPickOneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizPickOnePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizPickOnePanel.Designer.cs">
+      <DependentUpon>QuizPickOnePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizSelectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizSelectPanel.Designer.cs">
+      <DependentUpon>QuizSelectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizTypePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizTypePanel.Designer.cs">
+      <DependentUpon>QuizTypePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizWizardForm.Designer.cs">
+      <DependentUpon>QuizWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\QuizWizardPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quiz\QuizWizardPanel.Designer.cs">
+      <DependentUpon>QuizWizardPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenSaverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenSaverForm.Designer.cs">
+      <DependentUpon>ScreenSaverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SightingsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SightingsEditForm.Designer.cs">
+      <DependentUpon>SightingsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SightingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SightingsForm.Designer.cs">
+      <DependentUpon>SightingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SightingsReportItemData.cs" />
+    <Compile Include="SightingsReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SightingsReportsForm.Designer.cs">
+      <DependentUpon>SightingsReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleInstanceApplication.cs" />
+    <Compile Include="SoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundForm.Designer.cs">
+      <DependentUpon>SoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splasher.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaxonomyTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TaxonomyTreeView.Designer.cs">
+      <DependentUpon>TaxonomyTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoForm.Designer.cs">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Petey.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BirdingUI\BirdingUI.csproj">
+      <Project>{F65DC98E-80B4-430A-858B-864933035A5D}</Project>
+      <Name>BirdingUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Birding\Birding.csproj">
+      <Project>{22334640-EA03-4337-AF18-C1262E106480}</Project>
+      <Name>Birding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataUpdate\DataUpdates.csproj">
+      <Project>{2B4D98C5-A40C-4439-9476-D28ACA48B375}</Project>
+      <Name>DataUpdates</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AgentObjects">
+      <Guid>{F5BE8BC2-7DE6-11D0-91FE-00C04FD701A5}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird2a with lines.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guide.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IDWizard.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quizzes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogSightings.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomListMgr.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirdersHandbook.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewBird.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bullet.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="eViewer.ico" />
+    <Content Include="film_strip.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="program.ico" />
+    <Content Include="ref.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\DataContainer_MoveFirstHS.bmp" />
+    <None Include="Resources\DataContainer_MovePreviousHS.bmp" />
+    <None Include="Resources\DataContainer_MoveNextHS.bmp" />
+    <None Include="Resources\DataContainer_MoveLastHS.bmp" />
+    <None Include="Resources\Sort.bmp" />
+    <None Include="Resources\OrgChart.bmp" />
+    <None Include="Resources\NewDocument.bmp" />
+    <None Include="Resources\OpenFolder.bmp" />
+    <None Include="Resources\Delete.bmp" />
+    <None Include="Resources\Print1.bmp" />
+    <None Include="Resources\PrintPreview.bmp" />
+    <None Include="Resources\FilterOff.bmp" />
+    <None Include="Resources\Compare.bmp" />
+    <None Include="Resources\BirdersHandbook.jpg" />
+    <None Include="Resources\Compare.jpg" />
+    <Content Include="Resources\Clipboard.bmp" />
+    <Content Include="Resources\Copy.bmp" />
+    <None Include="Resources\CustomLists.jpg" />
+    <Content Include="Resources\CustomQuiz.bmp" />
+    <Content Include="Resources\CustomQuizCategory.bmp" />
+    <Content Include="Resources\eViewer_16x16.ico" />
+    <None Include="Resources\FieldGuide.jpg" />
+    <Content Include="Resources\FilterOn.bmp" />
+    <Content Include="Resources\Find.bmp" />
+    <None Include="Resources\handbook.bmp" />
+    <None Include="Resources\Help.bmp" />
+    <Content Include="Resources\IDWizard.jpg" />
+    <Content Include="Resources\Import.bmp" />
+    <Content Include="Resources\Pause.bmp" />
+    <None Include="Resources\petey_shadowed.gif" />
+    <None Include="Resources\Petey.bmp" />
+    <None Include="Resources\Petey.jpg" />
+    <Content Include="Resources\Play.bmp" />
+    <None Include="Resources\Reports.bmp" />
+    <Content Include="Resources\PreviewPhoto.bmp" />
+    <None Include="Resources\Print.jpg" />
+    <None Include="Resources\Quizzes.jpg" />
+    <None Include="Resources\Related.jpg" />
+    <None Include="Resources\Sightings.jpg" />
+    <None Include="Resources\Similar.jpg" />
+    <Content Include="Resources\Sound.bmp" />
+    <Content Include="Resources\Speaker.bmp" />
+    <Content Include="Resources\Stop.bmp" />
+    <Content Include="Resources\Video.bmp" />
+    <None Include="Resources\ViewBird.jpg" />
+    <None Include="Resources\Zoom.jpg" />
+    <Content Include="Resources\ZoomIn.bmp" />
+    <Content Include="Resources\ZoomOut.bmp" />
+    <Content Include="speaker.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Related.bmp" />
+    <None Include="Resources\Similar.bmp" />
+    <None Include="Resources\Print.bmp" />
+    <None Include="Resources\SideBySide.bmp" />
+    <None Include="Resources\SplashScreen.bmp" />
+    <None Include="Resources\Zoom.bmp" />
+    <None Include="WindowsUI.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{5AD368F8-9AD3-4E4C-97D8-1F4F1C124158}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)eViewerPostBuild.bat "$(WindowsSDK80Path)" "$(SolutionDir)" "$(ProjectDir)" "$(ProjectName)" "$(OutDir)" "$(TargetFileName)" 1</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,5 @@
+LIBRARY	"License"
+
+EXPORTS
+	Validate
+	ValidateSN

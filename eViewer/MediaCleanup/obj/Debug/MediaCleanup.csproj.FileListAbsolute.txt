@@ -1,0 +1,5 @@
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\MediaCleanup\obj\Debug\MediaCleanup.csproj.AssemblyReference.cache
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\MediaCleanup\obj\Debug\Thayer.MediaCleanup.CleanupMediaForm.resources
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\MediaCleanup\obj\Debug\Thayer.MediaCleanup.Properties.Resources.resources
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\MediaCleanup\obj\Debug\MediaCleanup.csproj.GenerateResource.cache
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\MediaCleanup\obj\Debug\MediaCleanup.csproj.CoreCompileInputs.cache

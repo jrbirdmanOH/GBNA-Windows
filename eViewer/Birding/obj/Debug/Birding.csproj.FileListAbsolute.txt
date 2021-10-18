@@ -1,0 +1,2 @@
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Birding\obj\Debug\Birding.csproj.AssemblyReference.cache
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Birding\obj\Debug\Birding.csproj.CoreCompileInputs.cache

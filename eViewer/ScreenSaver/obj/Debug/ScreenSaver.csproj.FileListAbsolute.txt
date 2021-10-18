@@ -1,0 +1,10 @@
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\bin\Debug\Thayer Birding Software.exe
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\bin\Debug\Thayer Birding Software.pdb
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\ScreenSaver.csproj.AssemblyReference.cache
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\Thayer.Birding.ScreenSaver.Properties.Resources.resources
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\Thayer.Birding.ScreenSaver.ScreenSaverForm.resources
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\Thayer.Birding.ScreenSaver.SettingsForm.resources
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\ScreenSaver.csproj.GenerateResource.cache
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\ScreenSaver.csproj.CoreCompileInputs.cache
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\Thayer Birding Software.exe
+C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\ScreenSaver\obj\Debug\Thayer Birding Software.pdb
