@@ -1,8 +1,0 @@
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.csproj.AssemblyReference.cache
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.FileListPanel.resources
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.SelectInputDirectoryPanel.resources
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.DeploymentWizardForm.resources
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.Properties.Resources.resources
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.SelectOutputDirectoryPanel.resources
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.csproj.GenerateResource.cache
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\Deploy\obj\Debug\Deploy.csproj.CoreCompileInputs.cache

@@ -1,2 +1,0 @@
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\DatabaseConversion\obj\Debug\DatabaseConversion.csproj.AssemblyReference.cache
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\DatabaseConversion\obj\Debug\DatabaseConversion.csproj.CoreCompileInputs.cache

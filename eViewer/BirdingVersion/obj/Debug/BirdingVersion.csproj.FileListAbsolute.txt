@@ -1,9 +1,0 @@
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\bin\Debug\Thayer.Birding.Versioning.dll
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\bin\Debug\Thayer.Birding.Versioning.pdb
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\bin\Debug\Thayer.Birding.Updates.dll
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\bin\Debug\Thayer.Birding.Updates.pdb
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\obj\Debug\BirdingVersion.csproj.AssemblyReference.cache
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\obj\Debug\BirdingVersion.csproj.CoreCompileInputs.cache
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\obj\Debug\BirdingVersion.csproj.CopyComplete
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\obj\Debug\Thayer.Birding.Versioning.dll
-C:\Users\Dave Diehl\source\repos\ThayerBirdingSoftware\Windows v7.7\eViewer\BirdingVersion\obj\Debug\Thayer.Birding.Versioning.pdb
